@@ -7,8 +7,6 @@ using UnityEngine;
 //capabilities,the ability to perform a shprt dash in a given direction, move with respect
 //to a targeted object, and be affected by physical forces. 
 //
-//Good luck trying to figure it out, this is the >10th iteration of a reliable movement script I've gone through.
-//It works pretty perfectly.
 [AddComponentMenu("Nite-Basik/Action Coordination/MAIN ONLY/Directly Controlled Mover")]
 [RequireComponent(typeof(CharacterController))]
 public class DirectlyControlledMover : BaseMover
