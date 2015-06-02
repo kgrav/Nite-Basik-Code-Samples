@@ -1,0 +1,7 @@
+1
+.
+3
+.
+0:Sound/FX/Liz/LIZ_SWORD3
+1:Sound/FX/Liz/LIZ_SWORD_COLLISION
+2:Sound/FX/LIZ/LIZ_SWORDHIT

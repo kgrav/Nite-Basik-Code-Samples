@@ -1,0 +1,10 @@
+1
+.
+6
+.
+0:Sound/FX/World/WoodTap
+1:Sound/FX/Misc/Snap/WONDERFUL_BREAKAGE
+2:Sound/FX/Bumps/DHA
+3:Sound/FX/Bumps/SUBTLE
+4:Sound/FX/Bumps/BOOSH
+5:Sound/FX/Bumps/BASS
