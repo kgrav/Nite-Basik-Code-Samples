@@ -242,11 +242,12 @@ public class Mortality : MonoBehaviour
             rep.TurnOn(force);
         qh = MORTCOLL.HLF;
         hitvector = impulse * force;
-        AnimatorTranceiver cq = GetComponent<AnimatorTranceiver>();
+        Animator cq = GetComponent<Animator>();
         if (!invulor && !Deferred)
         { health -= force / Resistance; HealthChange(); }
         if (!invulor && cq != null)
-            cq.SpecialTrig("OR");
+            cq.SetTrigger("OR"); //The "OR" state is the standard Override (hurt/interrupted) trigger common to all animators.
+            //Can be left out or changed to meet the needs of your project.
         if (!invulor && !reflect && droogy)
             holder.ReceiveAttack(impulse, force);
         if (!invulor && AUTOTRANSFORM)
