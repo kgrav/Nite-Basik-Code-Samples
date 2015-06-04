@@ -66,11 +66,9 @@ using UnityEngine;
                     switch (phase)
                     {
                         case 0:
-                            break;
-                        case 1:
                             database = new AudioClip[Convert.ToInt32(ts)];
                             break;
-                        case 2:
+                        case 1:
                             splits = ts.Split(':');
                             database[Convert.ToInt32(splits[0])] = (AudioClip)Resources.Load(splits[1], typeof(AudioClip));
                             break;
