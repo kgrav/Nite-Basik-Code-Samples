@@ -240,10 +240,11 @@ using UnityEngine;
                 rig.AddForce(rr);
             }
         }
-
+        public bool DoNotAnimate;
         void UnStun()
         {
             snd.PlayOneShot(SoundTable.GetSound(SoundContext, Recover));
+            if(!DoNotAnimate)
             anima.SetInteger("sig", 2);
             Invoke("UnStunPhaseB", 0.6f);
         }
@@ -303,8 +304,11 @@ using UnityEngine;
                         snd.PlayOneShot(SoundTable.GetSound(SoundContext, HitWall));
                         stunned = true;
                         Invoke("UnStun", 1.2f);
-                        anima.SetInteger("sig", 0);
-                        anima.SetTrigger("CIOR");
+                        if (!DoNotAnimate)
+                        {
+                            anima.SetInteger("sig", 0);
+                            anima.SetTrigger("CIOR");
+                        }
                     }
                     rig.AddForce(c.contacts[0].normal*UpwardBounce);
                 }

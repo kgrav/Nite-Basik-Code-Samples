@@ -70,8 +70,8 @@ using UnityEngine;
         public void Init()
         {
             GetLoaders();
-            register[on].Init(MidiTimer.NullClip);
-            register[off].Init(MidiTimer.NullClip);
+            register[on].Init(MidiTimer.GetNullClip());
+            register[off].Init(MidiTimer.GetNullClip());
             mem = MidiTimer.NullClip;
             indexofcurrent = -1;
             indexofnext = -1;
@@ -123,7 +123,7 @@ using UnityEngine;
             if (k == -2)
                 register[on].SetVolume(0);
             else if (k == -1)
-                FrameBuffer(MidiTimer.NullClip, -1);
+                FrameBuffer(MidiTimer.GetNullClip(), -1);
         }
     //Audiomations, Buffer the next frame's audio clip.
         public void FrameBuffer(AudioClip nextclip, int nextind)

@@ -8,7 +8,7 @@ using UnityEngine;
 //this is smoother than having the camera follow the player
 //directly, as the look probe smoothly aligns itself with the player,
 //and the player makes fast movements that would cause the camera to jerk around otherwise.
-[AddComponentMenu("Nite Basik/Camera/Lady Stardust Camera")]
+[AddComponentMenu("Nite-Basik/Camera/Action Game Camera")]
 public class FASTACTIONCAMERA : MonoBehaviour
 {
     public Transform movewith; //The camera will move relative to this object

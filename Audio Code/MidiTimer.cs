@@ -12,6 +12,15 @@ using UnityEngine;
     public class MidiTimer : MonoBehaviour
     {
 
+    public static AudioClip GetNullClip()
+    {
+        if (!NullClip)
+        {
+            NullClip = GameObject.FindObjectsOfType<MidiTimer>()[0].TimeTrack;
+        }
+        return NullClip;
+    }
+
     public static AudioClip NullClip;
     public static float MidiClipLength = 0.0f;
     public static float MeasLength;
@@ -21,10 +30,9 @@ using UnityEngine;
     AudioSource player;
     void Start()
     {
-        player = GetComponent<AudioSource>();
         NullClip = TimeTrack;
+        player = GetComponent<AudioSource>();
         GetComponent<AudioSource>().loop = true;
-        GetComponent<AudioSource>().playOnAwake = false;
         GetComponent<AudioSource>().clip = TimeTrack;
         MidiClipLength = TimeTrack.length;
         MidiTime = 0;

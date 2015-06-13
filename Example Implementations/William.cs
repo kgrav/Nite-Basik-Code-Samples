@@ -167,6 +167,7 @@ public class William : AICharacter
             CancelAttack();
             taunt = true;
             pods.enabled = false;
+            pods.DoNotAnimate = true;
             anim.SetTrigger("Kill");
             snd.PlayOneShot(SoundTable.GetSound(soundContext, DeathSound));
             Invoke("DieV0", 2.0f);

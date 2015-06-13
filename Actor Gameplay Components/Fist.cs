@@ -44,7 +44,7 @@ using System.Collections.Generic;
             {
                 hold.SetParent(null);
                 hold.GetComponent<Rigidbody>().AddForce(ProjectileInterface.arc);
-                hold.GetComponent<ProjectileWeapon>().Activate();
+                hold.GetComponent<ProjectileWeapon>().Throw();
             }
         }
 

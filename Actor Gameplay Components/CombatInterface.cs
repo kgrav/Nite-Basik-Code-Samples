@@ -13,6 +13,7 @@ public enum WEAPONTYPE { RANG, BLNT, BLDE, PROJ, MAGK }
         public WEAPONTYPE TypeofWeapon;
         public int Count;
         public int ForMult;
+        public int soundcontext;
         public bool queuing, ORing;
         bool animor;
 
@@ -133,7 +134,7 @@ public enum WEAPONTYPE { RANG, BLNT, BLDE, PROJ, MAGK }
             AnimatorTranceiver m = GetComponent<AnimatorTranceiver>();
             DirectlyControlledMover q = GetComponent<DirectlyControlledMover>();
             equipment[0].GetComponent<MeleeWeapon>().SetActivity(MWFLAGS.NONE);
-            GetComponent<Cabinet>().PlaySoundNOW(SpecialStateCollisions[spsta]);
+            GetComponent<AudioSource>().PlayOneShot(SoundTable.GetSound(soundcontext, SpecialStateCollisions[spsta]));
             spsta = -1;
             Deactivate();
             if (m != null)

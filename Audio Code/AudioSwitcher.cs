@@ -87,7 +87,7 @@ using UnityEngine;
                 else if (song == -1)
                 {
                     ChangeOnLoad.Add(track);
-                    ms[track].Load(MidiTimer.NullClip, -1);
+                    ms[track].Load(MidiTimer.GetNullClip(), -1);
                     
                 }
             }
