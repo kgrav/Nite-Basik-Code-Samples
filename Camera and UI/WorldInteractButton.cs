@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
-[AddComponentMenu("Lady Stardust/UI/Use Icon")]
+[AddComponentMenu("Nite-Basik/UI/Use Icon")]
 //Icon that appears over useable objects when player is in range; has no 
     //active effect, and is considered part of the UI.
     public class WorldInteractButton : MonoBehaviour
