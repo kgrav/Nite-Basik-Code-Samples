@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
-[AddComponentMenu("Lady Stardust/UI/Ability Image")]
+[AddComponentMenu("Nite-Basik/UI/Ability Image")]
     public class UIAbilityProbe : MonoBehaviour
     {
         int[] keys;
