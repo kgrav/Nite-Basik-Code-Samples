@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-[AddComponentMenu("Lady Stardust/Camera/Targetable Object")]
+[AddComponentMenu("Nite-Basik/Camera/Targetable Object")]
 public class Infrared : MonoBehaviour {
 
     public static Infrared PlayerTarget = null;
