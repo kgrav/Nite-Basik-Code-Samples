@@ -7,7 +7,7 @@ using UnityEngine;
 //The next audio clip can be loaded into
 //the inactive audio source,
 //and faded into.
-[AddComponentMenu("Lady Stardust/Sound/Midi Stereo Register")]
+[AddComponentMenu("Nite-Basik/Sound/Midi Stereo Register")]
     public class MidiStereoRegister : MonoBehaviour
     {
 
